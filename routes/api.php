@@ -18,4 +18,5 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 });
 
 Route::post('post', 'Controller@saveData');
-Route::get('get', 'Controller@getdata');
+Route::get('get/{id}', 'Controller@getdata');
+Route::put('put/{id}', 'Controller@putdata');
